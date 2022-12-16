@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	Members
+\* ------------------------------------------------------------ */
+
+.members {
+	list-style-type: none;
+	display: flex;
+	gap: 0 2.5rem;
+
+	figure img {
+		transition: transform $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				transform: scale(1.02);
+			}
+		}
+	}
+}

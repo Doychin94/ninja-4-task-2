@@ -1,0 +1,172 @@
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+.callout {
+	.callout__inner {
+		display: flex;
+		margin: 0 -3rem;
+	}
+
+	.callout__content {
+		padding: 0 3rem;
+		flex: 0 0 32.7%;
+	}
+
+	.callout__head {
+		max-width: 30rem;
+		margin-bottom: 3.4rem;
+	}
+
+	.callout__head h2 {
+		font-weight: 400;
+		letter-spacing: 0.07rem;
+	}
+
+	.callout__body {
+		max-width: 32rem;
+		margin-bottom: 3.8rem;
+	}
+
+	.callout__blue {
+		text-decoration: none;
+		color: #29405d;
+		font-weight: 500;
+		transition: color $t-duration ease-in-out;
+
+		&:hover {
+			color: $c-green;
+		}
+	}
+
+	.callout__aside {
+		padding: 0.4rem 3rem 0;
+		flex: 0 0 67.3%;
+		position: relative;
+	}
+
+	.callout__image {
+		max-width: 72rem;
+		position: relative;
+		padding-top: 63%;
+		margin-bottom: 3.3rem;
+	}
+
+	.callout__image img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/*  .callout__image--transparent  */
+
+	.callout__image--transparent {
+		position: absolute;
+		top: -3rem;
+		right: -4rem;
+		width: 90%;
+		padding-top: 59.3%;
+	}
+
+	.callout__image--transparent img {
+		opacity: 0.3;
+	}
+
+	.callout__foot h4 {
+		display: inline-block;
+		margin-right: 2.3rem;
+		transition: color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				color: $c-green;
+			}
+		}
+	}
+}
+
+/*  callout cards  */
+
+.callout--cards {
+	.callout__inner {
+		display: flex;
+		margin: 0 -2rem;
+	}
+
+	.callout__content {
+		padding: 0 2rem;
+		flex: 0 0 66.5%;
+	}
+
+	.callout__content h2 {
+		margin-bottom: 5.5rem;
+		font-weight: 400;
+		letter-spacing: 0.07rem;
+	}
+
+	.callout__aside {
+		padding: 9rem 2rem 0;
+		flex: 0 0 33.5%;
+	}
+
+	.callout__image {
+		max-width: none;
+		padding-top: 74.8%;
+		margin-bottom: 3.3rem;
+		overflow: hidden;
+	}
+
+	.callout__image img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		vertical-align: top;
+		transition: transform $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.callout__foot {
+		margin-left: -0.1rem;
+	} 
+
+	.callout__sub-title {
+		display: inline-block;
+		margin-bottom: 0.3rem;
+	}
+
+	.callout__price {
+		display: block;
+		margin-bottom: 1rem;
+		color: #7a7a7a;
+	}
+
+	.callout__foot a {
+		text-decoration: none;
+		transition: color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				
+			}
+		}
+	}
+
+	.callout__foot h6 {
+		text-transform: uppercase;
+		font-weight: 400;
+		color: $c-base;
+		font-size: 1.6rem;
+		letter-spacing: -0.03rem;
+	}
+}

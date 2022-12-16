@@ -1,0 +1,92 @@
+/* ------------------------------------------------------------ *\
+	Tile
+\* ------------------------------------------------------------ */
+
+.tile {
+	.tile__image {
+		position: relative;
+		padding-top: 100%;
+		transition: opacity $t-duration ease-in-out;
+		overflow: hidden;
+
+		&:hover {
+			@media(hover:hover) {
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.tile__image img {
+		position: absolute;
+		top: 0;
+		left: 0; 
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.tile__title {
+		padding: 1.5rem 3rem;
+		position: absolute;
+		bottom: 0.8rem;
+		left: 0;
+		z-index: 1; 
+		max-width: 32rem;
+	} 
+
+	h5 {
+		font-weight: 400;
+		letter-spacing: 0.07rem;
+	}
+}
+
+/*  tile--large  */
+
+.tile--large {
+	.tile__image {
+		padding-top: 49.7%;
+	}
+
+	.tile__title {
+		max-width: none;
+	}
+}
+
+/*  tile--large  */
+
+.tile--background-orange {
+	.tile__image {
+		background-color: #d2a946;
+	}
+}
+
+.tile--background-green {
+	.tile__image {
+		background-color: #9cb34e;
+	}
+}
+
+.tile--background-purple {
+	.tile__image {
+		background-color: #7f82b4;
+	}
+}
+
+.tile--background-blue {
+	.tile__image {
+		background-color: #638aca;
+	}
+}
+
+.tile--background-pink {
+	.tile__image {
+		background-color: #9b487d;
+	}
+}

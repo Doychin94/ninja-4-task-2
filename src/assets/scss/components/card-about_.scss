@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Card-about
+\* ------------------------------------------------------------ */
+
+.card-about {
+	padding: 4.2rem 2rem 4rem 5rem;
+	background-color: #fff;
+	width: 56rem;
+
+	.card-about__entry {
+		font-size: 2.4rem;
+		color: #414141;
+		letter-spacing: -0.08rem;
+		max-width: 44rem;
+		line-height: 1.25;
+		margin-bottom: 2rem;
+	}
+
+	.card-about__content {
+		max-width: 45.5rem
+	}
+}

@@ -1,0 +1,54 @@
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav {
+	font-size: 2rem;
+	font-family: $ff-MrEavesXLModOT-Book;
+	color: #fff;
+
+	> ul {
+		list-style-type: none;
+		display: flex;
+		gap: 0 4.3rem;
+	}
+
+	> ul > li {
+		position: relative;
+	}
+
+	> ul > li ~ li {
+		&:before {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: -2rem;
+			height: 100%;
+			width: 0.1rem;
+			border-left: 0.1rem dotted #dddd61;
+		}
+	}
+
+	> ul > li > a {
+		text-decoration: none;
+		transition: color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				color: $c-green;
+			}
+		}
+	}
+
+	.is-current:after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		bottom: 0.3rem;
+		left: 0;
+		height: 0.3rem;
+		width: 100%;
+		background-color: #dddddd61; 
+	}
+}

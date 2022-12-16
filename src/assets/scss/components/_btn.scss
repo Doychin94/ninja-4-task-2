@@ -1,0 +1,69 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: $ff-Rift;
+	min-width: 13.5rem;
+	border: 0.2rem solid;
+	border-color: #fff;
+	padding: 0.9rem 1rem;
+	font-size: 1.8rem;
+	background-color: transparent;
+	transition: color $t-duration, background-color $t-duration, border-color $t-duration ease-in-out;
+
+	&:hover {
+		@media(hover:hover) {
+			background-color: $c-green;
+		}
+	}
+}
+
+/*  Btn small   */
+
+.btn--small {
+	min-width: 8.3rem;
+	padding: 1rem;
+}
+
+/*  Btn dark   */
+
+.btn--dark {
+	color: #253a58;
+	border-color: #253a58;
+
+	&:hover {
+		@media(hover:hover) {
+			color: #fff;
+		}
+	}
+}
+
+/*  Btn green   */
+
+.btn--green {
+	background-color: $c-green;
+	min-width: 10.4rem;
+
+	&:hover {
+		@media(hover:hover) {
+			color: #638aca;
+		}
+	}
+}
+
+/*  Btn block  */
+
+.btn--block {
+	display: block;
+	padding-left: 0;
+	padding-right: 0;
+}

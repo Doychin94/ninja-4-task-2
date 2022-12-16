@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+    Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+    font-family: 'MrEavesXLModOT-Reg';
+    src: url('../fonts/MrEavesXLModOT-Reg.woff2') format('woff2'),
+        url('../fonts/MrEavesXLModOT-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rift';
+    src: url('../fonts/Rift-Regular.woff2') format('woff2'),
+        url('../fonts/Rift-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MrEavesXLModOT-Book';
+    src: url('../fonts/MrEavesXLModOT-Book.woff2') format('woff2'),
+        url('../fonts/MrEavesXLModOT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

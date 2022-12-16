@@ -1,0 +1,20 @@
+/* ------------------------------------------------------------ *\
+	Nav-utilities
+\* ------------------------------------------------------------ */
+
+.nav-utilities {
+	ul {
+		display: flex;
+		gap: 0 2rem;
+	}
+
+	figure img {
+		transition: transform $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

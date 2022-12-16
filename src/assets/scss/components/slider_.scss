@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------ *\
+	Slider
+\* ------------------------------------------------------------ */
+
+.slider {
+	position: relative;
+
+	.slider__paging {
+		position: absolute;
+		bottom: 5.6rem;
+		left: 0;
+	}
+
+	.slider__paging ol {
+		list-style-type: none;
+		display: flex;
+		gap: 0 0.6rem;
+	}
+
+	.slider__paging a {
+		text-decoration: none;
+		display: inline-block;
+		width: 1.2rem;
+		height: 1.2rem;
+		border-radius: 100%;
+		border: 0.1rem solid #b9b9b9;
+		transition: background-color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				background-color: $c-green;
+			}
+		}
+	}
+
+	.slider__paging .is-current {
+		background-color: #b9b9b9; 
+	}
+
+	.slider__actions {
+		position: absolute;
+		right: 4.2rem;
+		bottom: 5.5rem;
+	}
+
+	.slider__prev {
+		position: relative;
+		display: inline-block;
+		width: 4.3rem;
+		height: 4.3rem;
+		background-color: #25334a;
+		opacity: 0.9;
+		transition: background-color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				background-color: $c-green;
+			}
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotate(45deg);
+			width: 1.1rem;
+			height: 1.1rem;
+			border-width: 0.2rem;
+			border-style: solid;
+			border-color:  transparent transparent #fff #fff;
+		}
+	}
+
+	.slider__next {
+		position: relative;
+		display: inline-block;
+		width: 4.3rem;
+		height: 4.3rem;
+		background-color: #25334a;
+		opacity: 0.9;
+		transition: background-color $t-duration ease-in-out;
+
+		&:hover {
+			@media(hover:hover) {
+				background-color: $c-green;
+			}
+		}
+
+		&:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%) rotate(45deg);
+				width: 1.1rem;
+				height: 1.1rem;
+				border-width: 0.2rem;
+				border-style: solid;
+				border-color: #fff #fff transparent transparent;
+			}
+		}
+}
+
+/*  slider cards  */
+
+.slider--cards {
+	.slider__actions {
+		right: 40.4rem;
+		bottom: 22.7rem;
+	}
+
+	.slider__paging {
+		bottom: -0.4rem;
+	}
+}

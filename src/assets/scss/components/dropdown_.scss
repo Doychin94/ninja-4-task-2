@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Drobdown-menu
+\* ------------------------------------------------------------ */
+
+.dropdown-menu {
+	background-color: #f6f6f6;
+	padding: 10.8rem 5rem 5rem 5.8rem;
+	position: absolute;
+	bottom: -44rem;
+	left: 50%;
+	margin-left: -1rem;
+	transform: translateX(-50%);
+	width: 98.4rem;
+	color: #585858;
+	z-index: 10;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: -3rem;
+		left: 50%;
+		transform: translateX(-50%);
+		border-width: 1.5rem;
+		border-style: solid;
+		border-color: transparent transparent #fff transparent; 
+	}
+
+	.dropdown-menu__inner {
+		list-style-type: none;
+		display: flex;
+		margin: 0 -1.2rem;
+	}
+
+	.dropdown-menu__col {
+		flex: 0 0 calc(100% / 3);
+		padding: 0 1.2rem;
+	}
+}
